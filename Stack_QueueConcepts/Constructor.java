@@ -9,7 +9,7 @@
 // 3. Constructor firing -> 
                         //  Function with the name similar to the class name.
                         //  A default Constructor is provided by Java.. If we forget to write.
-                        //  There won't be any return type for Constructor, not even void.
+                        //  There won't be any return type for Constructor, not even void. It return "this"(which containes the address of Instance) by default.
                         //  By default it returns this.
 
 
@@ -24,6 +24,8 @@ import java.util.*;
 public class Main{
     
     public static class Person{
+
+        // To Over ride the java defaults we can do it here or we can do it in Parameterised Constructor.
         String name;
         int age;
         
