@@ -14,3 +14,6 @@
 .removeLast();
 .removeFirst();
 .removeAt(idx);
+
+// ........................display
+.display();
