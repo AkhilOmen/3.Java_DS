@@ -24,7 +24,7 @@
         
 //         Node child1 = root.children.remove(i);
         
-//         //here we are finding out the tail of n-1th node of the root child..
+//         //here we are finding out the tail of i-1th node of the root child..
 //         Node temp = root.children.get(i-1);
 //         while(temp.children.size() != 0 ){
 //             temp = temp.children.get(0);
