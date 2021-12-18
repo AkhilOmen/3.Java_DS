@@ -1,71 +1,71 @@
 // we use stack for construction.
 
 // Code
-import java.util.*;
+// import java.util.*;
 
-public class Main{
+// public class Main{
     
-    public static class Node{
+//     public static class Node{
         
-        int data;
-        ArrayList<Node> children;
+//         int data;
+//         ArrayList<Node> children;
         
-        public Node(int data){
-            this.data = data;
-            children = new ArrayList<>();
-        }
+//         public Node(int data){
+//             this.data = data;
+//             children = new ArrayList<>();
+//         }
         
-    }
+//     }
     
-    public static void main(String[] args){
+//     public static void main(String[] args){
         
-        int[] arr = {10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1, -1};
-        Node root = construct(arr);
+//         int[] arr = {10, 20, 50, -1, 60, -1, -1, 30, 70, -1, 80, 110, -1, 120, -1, -1, 90, -1, -1, 40, 100, -1, -1, -1};
+//         Node root = construct(arr);
         
-        display(root);
-    }
+//         display(root);
+//     }
     
-    public static Node construct(int[] arr){
-        Stack<Node> st = new Stack<>();
-        Node root = new Node(arr[0]);
-        st.push(root);
+//     public static Node construct(int[] arr){
+//         Stack<Node> st = new Stack<>();
+//         Node root = new Node(arr[0]);
+//         st.push(root);
         
-        for( int i = 1; i < arr.length; i++){
+//         for( int i = 1; i < arr.length; i++){
             
-            if( arr[i] == -1){
-                st.pop();
-            }else{
+//             if( arr[i] == -1){
+//                 st.pop();
+//             }else{
                 
-                Node temp = new Node(arr[i]);
+//                 Node temp = new Node(arr[i]);
                 
-                st.peek().children.add(temp);
-                st.push(temp);
+//                 st.peek().children.add(temp);
+//                 st.push(temp);
                 
-            }
+//             }
             
-        }
+//         }
         
-        return root;
+//         return root;
         
-    }
+//     }
     
-    public static void display(Node root){
+//     public static void display(Node root){
         
-        if( root.data == -1){
-            return;
-        }
+//         if( root.data == -1){
+//             return;
+//         }
         
-        System.out.print(root.data + " -> ");
-        for( Node child : root.children){
-            System.out.print(child.data + ", ");
-        }
-        System.out.println(".");
+//         System.out.print(root.data + " -> ");
+//         for( Node child : root.children){
+//             System.out.print(child.data + ", ");
+//         }
+//         System.out.println(".");
         
-        for(Node child : root.children){
-            display(child);
-        }
-    }
-}
+//         for(Node child : root.children){
+//             display(child);
+//         }
+//     }
+// }
 
 // Out Put
 // 10 -> 20, 30, 40, .
