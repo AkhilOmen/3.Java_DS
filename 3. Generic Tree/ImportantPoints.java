@@ -165,6 +165,60 @@
     //     }
         
     // }
+    
+    // Kth Largest
+    // public static int kthLargest(Node node, int k){
+        
+    //     int data = Integer.MAX_VALUE;
+    //     ceil = Integer.MAX_VALUE;
+    //     floor = Integer.MIN_VALUE;
+        
+    //     for( int i = 0; i < k; i++){
+    //         ceilAndFloor(node, data);
+    //         data = floor;
+    //         floor = Integer.MIN_VALUE;
+            
+    //     }
+        
+    //     return data;
+        
+    // }
+
 
 // 
 
+// 10. Max Sub Tree sum by using Pair Class
+    // public static class Pair {
+    //     int sum = 0;
+    //     int mss = Integer.MIN_VALUE;
+    //     Node mssNode;
+        
+    // }
+
+    // public static Pair MaxSubTreeSum(Node node){
+            
+    //     Pair mp = new Pair();
+    //     mp.sum += node.data;
+        
+    //     for( Node child : node.children ){
+            
+    //         Pair cp = MaxSubTreeSum(child);
+    //         mp.sum += cp.sum;
+            
+    //         if( cp.mss > mp.mss ){
+    //             mp.mss = cp.mss;
+    //             mp.mssNode = cp.mssNode;
+    //         }
+            
+    //     }
+        
+    //     if( mp.mss < mp.sum ){
+    //         mp.mss = mp.sum;
+    //         mp.mssNode = node;
+    //     }
+        
+    //     return mp;
+        
+    // }
+
+// 
