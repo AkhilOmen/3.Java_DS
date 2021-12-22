@@ -1,4 +1,7 @@
 // Algo in Generic Tree
+// No.of elements -> 0 -> sum + 1
+// height -> -1 -> ht + 1
+// diameter -> maxh -1, smaxh -1 -> cht > maxh{ smaxh = maxh , maxh = cht} (or) cht > smaxh{ smaxh = cht }  dia update(with maxh + smaxh + 2) return maxh + 1
 
 // 1. Level Order Of Generic Tree -> Use 
 //             Deque<Node> mq = new Deque<>();
@@ -222,3 +225,5 @@
     // }
 
 // 
+
+
