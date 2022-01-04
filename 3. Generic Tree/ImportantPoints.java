@@ -7,8 +7,8 @@
 //             Deque<Node> mq = new Deque<>();
 
 // 2. Level Order Linewise -> Use
-//             Deque<Node> mq = new Deque<>();
-//             Deque<Node> cq = new Deque<>();
+//             Deque<Node> mq = new ArrayDeque<>();
+//             Deque<Node> cq = new ArrayDeque<>();
             
 // 3. Level Order Linewise Zig Zag -> Use
 //                 Stack<Node> ms = new Stack<>();
