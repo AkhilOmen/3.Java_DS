@@ -97,4 +97,89 @@
 // 
 
 
-// 2. 
+// 2. Is Balanced Tree
+
+    // public static class Pair2{
+            
+    //     boolean flag;
+    //     int ht;
+        
+    //     public Pair2(boolean flag, int ht){
+    //         this.flag = flag;
+    //         this.ht = ht;
+    //     }
+        
+    // }
+
+    // public static Pair2 height(Node node){
+            
+    //     if( node == null ){
+    //         return new Pair2(true, -1);
+    //     }
+        
+    //     Pair2 lp = height(node.left);
+    //     Pair2 rp = height(node.right);
+        
+    //     int th = Math.max(lp.ht, rp.ht) + 1;
+        
+    //     if( lp.flag != false && rp.flag != false){
+            
+    //         boolean isSimilar = false;
+            
+    //         if( Math.abs(lp.ht - rp.ht) <= 1 ){
+    //             isSimilar = true;
+    //         }
+            
+    //         return new Pair2(isSimilar, th);
+            
+    //     }else{
+    //         return new Pair2(false, th);
+    //     }
+
+    // }
+
+// 
+
+// 3. Is a Binary Search Tree?
+    // public static class Pair2 {
+            
+    //     int min;
+    //     int max;
+    //     boolean flag;
+        
+    //     public Pair2(int min, int max, boolean flag) {
+    //         this.min = min;
+    //         this.max = max;
+    //         this.flag = flag;
+    //     }
+        
+    // }
+
+    // public static Pair2 isBST(Node node){
+            
+    //     if( node == null ){
+    //         return new Pair2(Integer.MAX_VALUE, Integer.MIN_VALUE, true);
+    //     }
+        
+    //     Pair2 lp = isBST(node.left);
+    //     Pair2 rp = isBST(node.right);
+        
+    //     int minn = Math.min(lp.min, Math.min(rp.min, node.data));
+    //     int maxn = Math.max(lp.max, Math.max(rp.max, node.data));
+        
+    //     if( lp.flag != false && rp.flag != false ){
+            
+    //         if( node.data > lp.max && node.data < rp.min){
+    //             return new Pair2(minn, maxn, true);
+    //         }else{
+    //             return new Pair2( minn, maxn, false);
+    //         }
+            
+    //     }else{
+    //         return new Pair2(minn, maxn, false);
+    //     }
+        
+    // }
+    
+// 
+
